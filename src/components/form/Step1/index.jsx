@@ -1,5 +1,6 @@
 import SubTitle from "../../SubTitle";
 import Title from "../../Title";
+import BtnNext from "../Button/Next";
 import styles from "./styles.module.css";
 
 const Step1 = () => {
@@ -9,6 +10,7 @@ const Step1 = () => {
       <SubTitle>
         Please provide your name, email address, and phone number.
       </SubTitle>
+      <BtnNext />
     </div>
   );
 };

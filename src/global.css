@@ -35,3 +35,9 @@ body {
   min-height: 100vh;
   background-color: var(--magnolia);
 }
+
+button {
+  border: none;
+  background-color: initial;
+  outline: none;
+}
