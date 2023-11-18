@@ -10,7 +10,10 @@ const App = () => {
       <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route exact path="/1" element={<StepOne />} />
+          <Route exact path="/" element={<StepOne />} />
+          <Route exact path="/2" element={<StepOne />} />
+          <Route exact path="/3" element={<StepOne />} />
+          <Route exact path="/4" element={<StepOne />} />
         </Routes>
       </BrowserRouter>
     </div>
