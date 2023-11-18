@@ -1,6 +1,7 @@
 import SubTitle from "../../SubTitle";
 import Title from "../../Title";
 import BtnBack from "../Button/Back";
+import BtnConfirm from "../Button/Confirm";
 import BtnNext from "../Button/Next";
 import styles from "./styles.module.css";
 
@@ -13,6 +14,7 @@ const Step1 = () => {
       </SubTitle>
       <BtnNext />
       <BtnBack />
+      <BtnConfirm/>
     </div>
   );
 };

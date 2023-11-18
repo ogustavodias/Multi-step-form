@@ -1,0 +1,12 @@
+.BtnConfirm {
+  display: block;
+  background-color: var(--purplish-blue);
+  cursor: pointer;
+  color: var(--white);
+  padding: 10px 25px;
+  border-radius: 4px;
+}
+
+.BtnConfirm:hover {
+  opacity: .5;
+}
