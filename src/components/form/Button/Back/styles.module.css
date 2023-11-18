@@ -1,0 +1,10 @@
+.BtnBack {
+  display: block;
+  cursor: pointer;
+  color: var(--cool-gray);
+  font-weight: 500;
+}
+
+.BtnBack:hover {
+  color: var(--marine-blue);
+}
