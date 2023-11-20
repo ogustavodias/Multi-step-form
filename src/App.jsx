@@ -22,6 +22,7 @@ const App = () => {
           <UserInfo />
         </section>
         <div className={styles.form_controls}>
+          <Button type={"back"} />
           <Button type={"next"} />
         </div>
       </form>

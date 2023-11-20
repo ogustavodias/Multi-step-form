@@ -1,0 +1,9 @@
+.Back {
+  color: var(--cool-gray);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Back:hover {
+  opacity: .5;
+}
