@@ -1,0 +1,141 @@
+.plans {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.plan_box {
+  position: relative;
+  flex: 1;
+}
+
+.plan_box input {
+  position: absolute;
+  display: block;
+  opacity: 0;
+}
+
+.plan_box label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.plan_box label::before {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.plan_box label.arcade::before {
+  content: url(../../assets/images/icon-arcade.svg);
+}
+
+.plan_box label.advanced::before {
+  content: url(../../assets/images/icon-advanced.svg);
+}
+
+.plan_box label.pro::before {
+  content: url(../../assets/images/icon-pro.svg);
+}
+
+.plan_box input:checked~label {
+  border-color: var(--marine-blue);
+  background-color: var(--magnolia);
+}
+
+.plan_box .plan_infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan_box .plan {
+  color: var(--marine-blue);
+  font-weight: 500;
+}
+
+.plan_box .price {
+  color: var(--cool-gray);
+  font-size: .9rem;
+}
+
+.plan_box .bonus {
+  color: var(--marine-blue);
+  font-size: .8rem;
+}
+
+.payment_type {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: var(--magnolia);
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.payment_type label {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.payment_type span {
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--cool-gray);
+}
+
+.payment_type .switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--marine-blue);
+  padding: 0 2px;
+}
+
+.payment_type .switch::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: transform .3s;
+}
+
+.payment_type input {
+  opacity: 0;
+  position: absolute;
+}
+
+.payment_type input:checked~.switch::before {
+  transform: translateX(20px);
+}
+
+@media only screen and (max-width: 40rem) {
+  .plans {
+    flex-direction: column;
+  }
+
+  .plan_box .bonus {
+    display: none;
+  }
+
+  .plan_box label {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .plan_box label::before {
+    margin-bottom: 0;
+  }
+}
