@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 const UserInfo = () => {
   return (
-    <>
+    <div className={styles.UserInfo}>
       <div className={styles.input_box}>
         <label htmlFor="name">Name</label>
         <input
@@ -30,7 +30,7 @@ const UserInfo = () => {
           placeholder="e.g. +1 234 567 890"
         />
       </div>
-    </>
+    </div>
   );
 };
 
