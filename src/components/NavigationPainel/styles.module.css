@@ -3,3 +3,7 @@
   border-radius: 4px;
   padding: 2rem;
 }
+
+.NavigationPainel ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}

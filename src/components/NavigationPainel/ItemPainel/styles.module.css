@@ -1,0 +1,39 @@
+.ItemPainel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step_number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: .8rem;
+}
+
+.ItemPainel.active .step_number {
+  background-color: var(--light-blue);
+  color: var(--marine-blue);
+  border: 1px solid var(--cool-gray);
+}
+
+.step_infos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.step_infos span {
+  font-size: .8rem;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.step_infos span:first-child {
+  color: var(--cool-gray);
+}

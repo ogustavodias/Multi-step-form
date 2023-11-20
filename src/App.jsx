@@ -1,5 +1,8 @@
+// Estilos
 import "./global.css";
 import styles from "./styles.module.css";
+
+// Componentes
 import NavigationPainel from "./components/NavigationPainel";
 
 const App = () => {
