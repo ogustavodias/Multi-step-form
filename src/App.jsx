@@ -8,7 +8,7 @@ import UserInfo from "./pages/UserInfo";
 import Title from "./components/Title";
 import Subtitle from "./components/Subtitle";
 import Button from "./components/Button/index";
-import SelectPlan from "./pages/SelectPlan";
+/* import SelectPlan from "./pages/SelectPlan"; */
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
           <Subtitle>
             Please provide your name, email address, and phone number.
           </Subtitle>
-          <SelectPlan />
+          <UserInfo />
         </section>
         <div className={styles.form_controls}>
           <Button type={"back"} />

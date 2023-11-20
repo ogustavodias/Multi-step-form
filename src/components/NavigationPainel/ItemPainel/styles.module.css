@@ -37,3 +37,9 @@
 .step_infos span:first-child {
   color: var(--cool-gray);
 }
+
+@media only screen and (max-width: 40rem) {
+  .step_infos {
+    display: none;
+  }
+}

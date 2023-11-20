@@ -33,10 +33,20 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  min-width: 100vw;
   background-color: var(--magnolia);
 }
 
 button {
   border: none;
   background-color: initial;
+}
+
+@media only screen and (max-width: 40rem) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: unset;
+  }
 }

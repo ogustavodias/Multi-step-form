@@ -7,3 +7,16 @@
 .NavigationPainel ul li:not(:last-child) {
   margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 40rem) {
+  .NavigationPainel {
+    background-image: url(../../assets/images/bg-sidebar-mobile.svg);
+    border-radius: unset;
+  }
+
+  .NavigationPainel ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
