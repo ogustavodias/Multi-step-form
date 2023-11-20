@@ -5,5 +5,5 @@
 }
 
 .Back:hover {
-  opacity: .5;
+  color: var(--marine-blue);
 }
