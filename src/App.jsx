@@ -1,11 +1,11 @@
 import "./global.css";
 import styles from "./styles.module.css";
-import NavigationBar from "./components/NavigationBar";
+import NavigationPainel from "./components/NavigationPainel";
 
 const App = () => {
   return (
     <div className={styles.App}>
-        <NavigationBar />
+      <NavigationPainel />
     </div>
   );
 };
