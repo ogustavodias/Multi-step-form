@@ -21,6 +21,10 @@
   font-weight: 500;
 }
 
+.input_box input::placeholder {
+  font-weight: 400;
+}
+
 .input_box :focus {
   border-color: var(--marine-blue);
 }

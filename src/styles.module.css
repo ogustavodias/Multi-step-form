@@ -1,7 +1,6 @@
 .App {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  width: 900px;
   height: 600px;
   background-color: var(--white);
   padding: 1rem;
@@ -10,5 +9,13 @@
 }
 
 .form {
+  display: grid;
   padding: 2rem 4rem;
+}
+
+.form_controls {
+  align-self: end;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }

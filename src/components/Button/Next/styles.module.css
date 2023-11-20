@@ -1,0 +1,12 @@
+.Next {
+  background-color: var(--marine-blue);
+  color: var(--magnolia);
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.Next:hover {
+  opacity: .5;
+}
