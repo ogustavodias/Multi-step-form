@@ -43,6 +43,8 @@
   content: url(../../assets/images/icon-pro.svg);
 }
 
+
+.plan_box:hover label, 
 .plan_box input:checked~label {
   border-color: var(--marine-blue);
   background-color: var(--magnolia);
