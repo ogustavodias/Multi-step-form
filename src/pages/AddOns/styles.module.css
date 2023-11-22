@@ -1,0 +1,84 @@
+.service_box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.service_box input,
+.service_price {
+  position: absolute;
+}
+
+.service_box input {
+  left: 20px;
+}
+
+.service_box input[type="checkbox"] {
+  -webkit-appearance: none;
+  /* Remova a aparência padrão no Safari/Chrome */
+  -moz-appearance: none;
+  /* Remova a aparência padrão no Firefox */
+  appearance: none;
+  /* Remova a aparência padrão em navegadores modernos */
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+}
+
+.service_box input[type="checkbox"]:checked {
+  background-color: var(--purplish-blue);
+}
+
+.service_box input[type="checkbox"]:checked::before {
+  content: "\2713";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: var(--white);
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.service_box label {
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.service_box label:hover,
+.service_box input[type="checkbox"]:checked+label {
+  border-color: var(--marine-blue);
+  background-color: var(--magnolia);
+}
+
+.service_info {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.service_name {
+  font-size: .9rem;
+  color: var(--marine-blue);
+  font-weight: 700;
+}
+
+.service_resume {
+  font-size: .9rem;
+  color: var(--cool-gray);
+}
+
+.service_price {
+  right: 20px;
+  pointer-events: none;
+  font-size: .8rem;
+  color: var(--purplish-blue);
+}

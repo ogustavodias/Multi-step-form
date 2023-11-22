@@ -4,11 +4,14 @@ import styles from "./styles.module.css";
 
 // Components
 import NavigationPainel from "./components/NavigationPainel";
-/* import UserInfo from "./pages/UserInfo"; */
 import Title from "./components/Title";
 import Subtitle from "./components/Subtitle";
 import Button from "./components/Button/index";
-import SelectPlan from "./pages/SelectPlan";
+
+// Pages
+/* import SelectPlan from "./pages/SelectPlan"; */
+/* import UserInfo from "./pages/UserInfo"; */
+import AddOns from "./pages/AddOns";
 
 const App = () => {
   return (
@@ -20,7 +23,7 @@ const App = () => {
           <Subtitle>
             Please provide your name, email address, and phone number.
           </Subtitle>
-          <SelectPlan />
+          <AddOns />
         </section>
         <div className={styles.form_controls}>
           <Button type={"back"} />
