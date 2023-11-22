@@ -11,7 +11,8 @@ import Button from "./components/Button/index";
 // Pages
 /* import SelectPlan from "./pages/SelectPlan"; */
 /* import UserInfo from "./pages/UserInfo"; */
-import AddOns from "./pages/AddOns";
+/* import AddOns from "./pages/AddOns"; */
+import Summary from "./pages/Summary";
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
           <Subtitle>
             Please provide your name, email address, and phone number.
           </Subtitle>
-          <AddOns />
+          <Summary />
         </section>
         <div className={styles.form_controls}>
           <Button type={"back"} />
