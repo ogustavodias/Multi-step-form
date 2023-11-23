@@ -21,10 +21,8 @@ const App = () => {
         <NavigationPainel />
         <form className={styles.form}>
           <section className={styles.form_content}>
-            <Title>Personal Info</Title>
-            <Subtitle>
-              Please provide your name, email address, and phone number.
-            </Subtitle>
+            <Title />
+            <Subtitle />
             <CurrentPage />
           </section>
           <div className={styles.form_controls}>

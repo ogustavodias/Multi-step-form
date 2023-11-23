@@ -1,6 +1,8 @@
 import styles from "./styles.module.css";
 
 const UserInfo = () => {
+
+
   return (
     <div className={styles.UserInfo}>
       <div className={styles.input_box}>
