@@ -12,25 +12,27 @@ import Button from "./components/Button/index";
 /* import SelectPlan from "./pages/SelectPlan"; */
 /* import UserInfo from "./pages/UserInfo"; */
 /* import AddOns from "./pages/AddOns"; */
-import Summary from "./pages/Summary";
+/* import Summary from "./pages/Summary"; */
+import Successful from "./pages/Successful";
 
 const App = () => {
   return (
     <div className={styles.App}>
       <NavigationPainel />
-      <form className={styles.form}>
+{/*       <form className={styles.form}>
         <section className={styles.form_content}>
           <Title>Personal Info</Title>
           <Subtitle>
             Please provide your name, email address, and phone number.
           </Subtitle>
-          <Summary />
+          
         </section>
         <div className={styles.form_controls}>
           <Button type={"back"} />
           <Button type={"next"} />
         </div>
-      </form>
+      </form> */}
+      <Successful />
     </div>
   );
 };

@@ -22,7 +22,6 @@ const Summary = () => {
           </div>
         </div>
       </div>
-
       <div className={styles.total_box}>
         <span>Total (per month)</span>
         <span className={styles.total_price}>+$12/mo</span>

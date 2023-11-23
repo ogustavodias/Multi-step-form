@@ -1,0 +1,15 @@
+.Successful {
+  align-self: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.icon::before {
+  content: url(../../assets/images/icon-thank-you.svg);
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.Successful p {
+  color: var(--cool-gray);
+}
