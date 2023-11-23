@@ -28,6 +28,10 @@
   --white: hsl(0, 0%, 100%);
 }
 
+#root {
+  width: 100%;
+}
+
 body {
   display: flex;
   align-items: center;
