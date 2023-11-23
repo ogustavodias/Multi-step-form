@@ -16,14 +16,6 @@
   padding: 2rem 4rem;
 }
 
-.form_controls {
-  align-self: end;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
 @media only screen and (max-width: 40rem) {
   .App {
     grid-template-columns: 1fr;
@@ -46,14 +38,5 @@
     border-radius: 4px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
     margin-top: -40px;
-  }
-
-  .form_controls {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding: 1rem;
-    background-color: var(--white);
   }
 }
