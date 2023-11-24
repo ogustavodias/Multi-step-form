@@ -14,7 +14,6 @@ import { AppContextProvider } from "./context";
 // Current page
 import CurrentPage from "./pages/CurrentPage";
 
-
 const App = () => {
   return (
     <AppContextProvider>

@@ -10,8 +10,7 @@ import { AppContext } from "../../context";
 
 const NavigationPainel = () => {
   const { step } = useContext(AppContext);
-  console.log(step);
-  
+
   return (
     <nav className={styles.NavigationPainel}>
       <ul>
