@@ -13,7 +13,7 @@ const Next = () => {
   }
 
   return (
-    <button className={styles.Next} type="button" onClick={handleNext}>
+    <button className={styles.Next} type="submit" onClick={handleNext}>
       Next Step
     </button>
   );

@@ -13,7 +13,7 @@ const Confirm = () => {
   }
 
   return (
-    <button className={styles.Confirm} type="button" onClick={handleConfirm}>
+    <button className={styles.Confirm} type="submit" onClick={handleConfirm}>
       Confirm
     </button>
   );

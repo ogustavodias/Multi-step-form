@@ -15,11 +15,15 @@ import { AppContextProvider } from "./context";
 import CurrentPage from "./pages/CurrentPage";
 
 const App = () => {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
     <AppContextProvider>
       <div className={styles.App}>
         <NavigationPainel />
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <section className={styles.form_content}>
             <Title />
             <Subtitle />
