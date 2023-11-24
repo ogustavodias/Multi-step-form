@@ -3,3 +3,13 @@
   color: var(--marine-blue);
   margin-bottom: 10px;
 }
+
+.successful {
+  text-align: center;
+}
+
+.successful::before {
+  content: url(../../assets/images/icon-thank-you.svg);
+  display: block;
+  margin-bottom: 1rem;
+}

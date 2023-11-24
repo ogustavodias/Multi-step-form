@@ -46,7 +46,7 @@ const CurrentPage = () => {
   }
 
   if (step === 5) {
-    title = "";
+    title = "Thank you!";
     subtitle = "";
     setTitle(title);
     setSubtitle(subtitle);

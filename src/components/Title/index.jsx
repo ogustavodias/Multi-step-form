@@ -6,9 +6,9 @@ import { useContext } from "react";
 import { AppContext } from "../../context";
 
 const Title = () => {
-  const { title } = useContext(AppContext);
+  const { title, step } = useContext(AppContext);
 
-  return <h1 className={styles.Title}>{title}</h1>;
+  return <h1 className={`${styles.Title} ${step === 5 && styles.successful}`}>{title}</h1>;
 };
 
 export default Title;
