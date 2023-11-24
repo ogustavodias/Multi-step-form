@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 const Summary = () => {
   return (
-    <div className={styles.Summary}>
+    <div className={`${styles.Summary} anime-left`}>
       <div className={styles.summary_info}>
         <div className={styles.plan}>
           <span className={styles.plan_name}>Arcade (Monthly)</span>

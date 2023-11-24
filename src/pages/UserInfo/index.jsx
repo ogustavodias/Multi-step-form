@@ -4,7 +4,7 @@ const UserInfo = () => {
 
 
   return (
-    <div className={styles.UserInfo}>
+    <div className={`${styles.UserInfo} anime-left`}>
       <div className={styles.input_box}>
         <label htmlFor="name">Name</label>
         <input

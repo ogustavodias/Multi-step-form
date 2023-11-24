@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 const Successful = () => {
   return (
-    <div className={styles.Successful}>
+    <div className={`${styles.Successful} anime-left`}>
       <p>
         Thanks for confirming your subscription! We have hope you have fun using
         our platform. If you ever need support, please feel free to email us at

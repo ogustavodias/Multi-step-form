@@ -46,6 +46,20 @@ button {
   background-color: initial;
 }
 
+.anime-left {
+  animation: anime-left .3s ease;
+}
+
+@keyframes anime-left {
+  from {
+    transform: translateX(-60px)
+  }
+
+  to {
+    transform: initial;
+  }
+}
+
 @media only screen and (max-width: 40rem) {
   body {
     display: flex;

@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 const AddOns = () => {
   return (
-    <div className={styles.AddOns}>
+    <div className={`${styles.AddOns} anime-left`}>
       <div className={styles.service_box}>
         <input type="checkbox" name="online-service" id="online-service" />
         <label htmlFor="online-service">

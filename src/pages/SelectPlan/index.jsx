@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 const SelectPlan = () => {
   return (
-    <div className={styles.SelectPlan}>
+    <div className={`${styles.SelectPlan} anime-left`}>
       <div className={styles.plans}>
         <div className={styles.plan_box}>
           <input type="radio" id="arcade" name="plan"></input>
