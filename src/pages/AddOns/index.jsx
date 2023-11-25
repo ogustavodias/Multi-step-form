@@ -8,7 +8,7 @@ import { AppContext } from "../../context";
 const AddOns = () => {
   const { data, changeData } = useContext(AppContext);
   const { online_service, larger_storage, customizable_profile } = data.addons;
-  console.log(data);
+  console.log(online_service, larger_storage, customizable_profile);
   return (
     <div className={`${styles.AddOns} anime-left`}>
       <div className={styles.service_box}>

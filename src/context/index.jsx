@@ -8,7 +8,7 @@ export const AppContextProvider = ({ children }) => {
     name: "",
     email: "",
     phone: "",
-    plan: "",
+    plan: "arcade",
     payment_type: "monthly",
     addons: {
       online_service: false,

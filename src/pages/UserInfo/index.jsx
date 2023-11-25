@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { AppContext } from "../../context";
 
 const UserInfo = () => {
-  const {data, changeData} = useContext(AppContext);
+  const { data, changeData } = useContext(AppContext);
   console.log(data);
   return (
     <div className={`${styles.UserInfo} anime-left`}>
