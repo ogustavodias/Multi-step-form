@@ -15,14 +15,23 @@ import { useContext } from "react";
 import { AppContext } from "../../context/index";
 
 const Form = () => {
-  const {setStep} = useContext(AppContext);
-  const userInfo = {name: useUserInfo(), email: useUserInfo(), phone: useUserInfo()};
-  const {name, email, phone} = userInfo;
+  const { setStep, step, onChange } = useContext(AppContext);
+  const userInfo = {
+    name: useUserInfo(),
+    email: useUserInfo("email"),
+    phone: useUserInfo("phone"),
+  };
+  const { name, email, phone } = userInfo;
 
-  function handleSubmit(e) { 
+  function handleSubmit(e) {
     e.preventDefault();
-    const isValid = Object.keys(userInfo).map(item => userInfo[item].validate() === true).every(item => item === true);
-    if (isValid) setStep(previous => previous + 1);
+    const isValid = Object.keys(userInfo)
+      .map((item) => userInfo[item].validate() === true)
+      .every((item) => item === true);
+    if (isValid) setStep((previous) => previous + 1);
+    if (isValid && step === 4) {
+      Object.keys(userInfo).forEach((item) => onChange([item], userInfo[item]));
+    }
   }
 
   return (
