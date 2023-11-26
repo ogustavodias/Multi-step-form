@@ -5,10 +5,13 @@ import styles from "./styles.module.css";
 // Context
 import { AppContext } from "../../context/index";
 
+// Catalog plan
+import catalog_plans from "../../catalog/plans.json";
+
 const SelectPlan = () => {
   const { data, onChange } = useContext(AppContext);
   const { plan, payment_type } = data;
-  console.log(data);
+
   return (
     <div className={`${styles.SelectPlan} anime-left`}>
       <div className={styles.plans}>
@@ -24,8 +27,12 @@ const SelectPlan = () => {
           <label htmlFor="arcade" className={styles.arcade}>
             <div className={styles.plan_infos}>
               <span className={styles.plan}>Arcade</span>
-              <span className={styles.price}>$90/yr</span>
-              <span className={styles.bonus}>2 months free</span>
+              <span className={styles.price}>{`$${catalog_plans.arcade[payment_type]}/${
+                payment_type === "yearly" ? "yr" : "mo"
+              }`}</span>
+              {payment_type === "yearly" && (
+                <span className={styles.bonus}>2 months free</span>
+              )}
             </div>
           </label>
         </div>
@@ -41,8 +48,12 @@ const SelectPlan = () => {
           <label htmlFor="advanced" className={styles.advanced}>
             <div className={styles.plan_infos}>
               <span className={styles.plan}>Advanced</span>
-              <span className={styles.price}>$90/yr</span>
-              <span className={styles.bonus}>2 months free</span>
+              <span className={styles.price}>{`$${
+                catalog_plans.advanced[payment_type]
+              }/${payment_type === "yearly" ? "yr" : "mo"}`}</span>
+              {payment_type === "yearly" && (
+                <span className={styles.bonus}>2 months free</span>
+              )}
             </div>
           </label>
         </div>
@@ -58,8 +69,12 @@ const SelectPlan = () => {
           <label htmlFor="pro" className={styles.pro}>
             <div className={styles.plan_infos}>
               <span className={styles.plan}>Pro</span>
-              <span className={styles.price}>$90/yr</span>
-              <span className={styles.bonus}>2 months free</span>
+              <span className={styles.price}>{`$${catalog_plans.pro[payment_type]}/${
+                payment_type === "yearly" ? "yr" : "mo"
+              }`}</span>
+              {payment_type === "yearly" && (
+                <span className={styles.bonus}>2 months free</span>
+              )}
             </div>
           </label>
         </div>
@@ -74,9 +89,13 @@ const SelectPlan = () => {
             checked={payment_type === "yearly"}
             onChange={({ target }) => onChange(target.name, target.value)}
           />
-          <span>Monthly</span>
+          <span className={`${payment_type === "monthly" && styles.monthly}`}>
+            Monthly
+          </span>
           <span className={styles.switch}></span>
-          <span>Yearly</span>
+          <span className={`${payment_type === "yearly" && styles.yearly}`}>
+            Yearly
+          </span>
         </label>
       </div>
     </div>

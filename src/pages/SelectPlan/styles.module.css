@@ -44,7 +44,7 @@
 }
 
 
-.plan_box:hover label, 
+.plan_box:hover label,
 .plan_box input:checked~label {
   border-color: var(--marine-blue);
   background-color: var(--magnolia);
@@ -90,6 +90,11 @@
   font-size: .9rem;
   font-weight: 500;
   color: var(--cool-gray);
+}
+
+.payment_type span.monthly,
+.payment_type span.yearly {
+  color: var(--marine-blue);
 }
 
 .payment_type .switch {
