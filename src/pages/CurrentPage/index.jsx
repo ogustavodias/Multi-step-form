@@ -9,10 +9,10 @@ import Successful from "../Successful/index";
 import { AppContext } from "../../context/index";
 import { useContext } from "react";
 
-const CurrentPage = () => {
+const CurrentPage = ({name, email, phone}) => {
   const { step } = useContext(AppContext);
 
-  if (step === 1) return <UserInfo />;
+  if (step === 1) return <UserInfo name={name} email={email} phone={phone}/>;
 
   if (step === 2) return <SelectPlan />;
 

@@ -7,9 +7,22 @@ import FormControls from "../FormControls";
 import Subtitle from "../Subtitle";
 import Title from "../Title";
 
+// Custom Hook
+import useUserInfo from "../../hooks/useUserInfo";
+
+// Context
+import { useContext } from "react";
+import { AppContext } from "../../context/index";
+
 const Form = () => {
-  function handleSubmit(e) {
+  const {setStep} = useContext(AppContext);
+  const userInfo = {name: useUserInfo(), email: useUserInfo(), phone: useUserInfo()};
+  const {name, email, phone} = userInfo;
+
+  function handleSubmit(e) { 
     e.preventDefault();
+    const isValid = Object.keys(userInfo).map(item => userInfo[item].validate() === true).every(item => item === true);
+    if (isValid) setStep(previous => previous + 1);
   }
 
   return (
@@ -17,7 +30,7 @@ const Form = () => {
       <section className={styles.form_content}>
         <Title />
         <Subtitle />
-        <CurrentPage />
+        <CurrentPage name={name} email={email} phone={phone} />
       </section>
       <FormControls />
     </form>
