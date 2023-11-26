@@ -1,3 +1,9 @@
+.input_box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+
 .input_box:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -19,6 +25,11 @@
   border-radius: 4px;
   padding: 10px;
   font-weight: 500;
+  grid-column: 1/-1;
+}
+
+.input_box input.error {
+  border-color: var(--strawberry-red);
 }
 
 .input_box input::placeholder {

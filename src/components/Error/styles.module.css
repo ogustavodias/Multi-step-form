@@ -1,0 +1,5 @@
+.Error {
+  color: var(--strawberry-red);
+  font-size: .7rem;
+  font-weight: 700;
+}

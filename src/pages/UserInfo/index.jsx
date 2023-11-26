@@ -1,6 +1,9 @@
 // Styles
 import styles from "./styles.module.css";
 
+// Components
+import Error from "../../components/Error";
+
 // Context
 
 const UserInfo = () => {
@@ -17,11 +20,13 @@ const UserInfo = () => {
       </div>
       <div className={styles.input_box}>
         <label htmlFor="email">Email Adress</label>
+        <Error error={"Campo em branco!"}/>
         <input
           type="text"
           id="email"
           name="email"
           placeholder="e.g. stephenking@lorem.com"
+          className={styles.error}
         />
       </div>
       <div className={styles.input_box}>
