@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "multi-step-form-main": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
